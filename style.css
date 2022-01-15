@@ -107,6 +107,41 @@
     text-decoration: none;
     margin-right: 17px;
 }
+/*-----------------------
+ featured product styles 
+ ------------------------*/
+ .featured-product{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     background-color: #F1F5FD;
+     border-radius: 10px;
+     margin-top:150px;
+     
+ }
+ .featured-product-left {
+     /* text-align: right; */
+ }
+ .featured-product-left img{
+    width: 50%;
+    margin-left: 150px;
+    position: relative;
+    margin-top: -115px;  
+    margin-bottom: -7px;   
+ }
+ .featured-product-right {
+    padding-top:50px;
+    padding-right:50px;
+    text-align: center;
+}
+.featured-product-right h2{
+    margin-bottom: 0;
+}
+.featured-product-right .financial{
+    color:#D3CDC4;
+    font-size: 15px;
+    margin-top: 0;
+}
+
 /* -----------
 footer styles
 -------------- */
@@ -151,6 +186,7 @@ media querey
 
     .influencer{
         flex-direction: column;
+        
     }
     .influencer-left,.influencer-right{
         width:100%;
@@ -166,10 +202,7 @@ media querey
     .influencer-left p{
        margin-bottom: 20px;
     }
-    .influencer-right{
-        
-    }
-    .influencer-right img{
+   .influencer-right img{
         width:100%;
     }
     .container{
@@ -177,12 +210,29 @@ media querey
      }
     .collections{
        grid-template-columns: repeat(1,1fr);
+       margin-top: 50px;
      }
     .collection{
         padding:25px;
     }
     .collection img{
         width: 100%;
+    }
+
+    .featured-product{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 50px ;
+    }
+    .featured-product-left{
+        display: none;
+    }
+    .featured-product-right {
+         padding:30px 10px;
+         text-align: center;
+        }
+
+    footer{
+        margin-top: 50px;
     }
  
   
