@@ -12,10 +12,39 @@
     
  }
 
+ /* ------------------
+ header section styles
+ --------------------- */
+ .header-section{
+     display: flex;
+     justify-content: space-between;
+     margin-top:50px;
+     margin-bottom: 80px;
+   
+ }
+ .header-section-left h2{
+     font-size: 28px;
+     margin-top: 0;
+ }
+ nav ul{
+     margin-top: 8px;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline-block;
+     margin-right: 34px;
+ }
+
+ nav ul li a{
+     color:#3A3A3A;
+     text-decoration: none;
+     font-size: 16px;
+ }
+
 /* ---------------
  influencer styles
  ----------------- */
- 
+
  .influencer{
      display: flex;
      column-gap: 50px;;
@@ -70,6 +99,7 @@
      display: grid;
      grid-template-columns: repeat(3,330px);
      grid-column-gap:30px;
+     padding-left:15px;
      
 }
 .collection{
@@ -187,8 +217,19 @@ media querey
 /* --------------
 Mobile Responsive 
 -----------------*/
-
 @media only screen and (max-width:688px)  {
+    .container{
+        width: 90%;
+       }
+    .header-section-left{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .header-section-right{
+        display: none;
+    }
+
    .influencer{
         flex-direction: column;
         
@@ -210,11 +251,9 @@ Mobile Responsive
    .influencer-right img{
         width:100%;
     }
-    .container{
-      width: 90%;
-     }
     .collections{
        grid-template-columns: repeat(1,1fr);
+       padding-left: 0;
     
      }
     .poular-collection{
@@ -238,7 +277,6 @@ Mobile Responsive
          padding:30px 10px;
          text-align: center;
         }
-
     footer{
         margin-top: 50px;
     }
@@ -264,6 +302,7 @@ Tablet Responsive
     }
    .collections{
         grid-template-columns: repeat(2,1fr);
+        padding-left: 0;
     }
     .collection
     {
