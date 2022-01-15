@@ -4,10 +4,12 @@
  ----------- */
  body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
  }
  .container{
      width: 80%;
      margin: 0 auto;
+    
  }
 
 /* ---------------
@@ -24,6 +26,7 @@
  .influencer-left h1{
     font-size: 52px;
     font-weight: 700;
+    margin-bottom: 0;
  }
  .influencer-left p{
     font-size:16px;
@@ -68,6 +71,9 @@
     border-radius: 7px;
     margin-bottom: 30px;
 }
+/* .collection img{
+    width: 100%;
+} */
 .collection h1{
     font-size: 28px;
     font-weight: 500;
@@ -100,4 +106,84 @@
     font-size: 16px;
     text-decoration: none;
     margin-right: 17px;
+}
+/* -----------
+footer styles
+-------------- */
+footer{
+    color:#ffffff;
+    text-align: center;
+    background-color:#0A0826;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+footer h2{
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+footer small{
+    font-size: 16px;
+}
+.social-icons{
+    margin-top: 17px;
+}
+.social-icons a{
+    display: inline-block;
+    margin-right: 16px;
+    background-color: #22213C;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+.fab{
+    color:#ffffff;
+    font-size: 20px;
+    margin-top: 6px;
+    
+}
+
+/* ---------
+media querey 
+------------*/
+/* Mobile Responsive */
+
+@media only screen and (max-width:688px)  {
+
+    .influencer{
+        flex-direction: column;
+    }
+    .influencer-left,.influencer-right{
+        width:100%;
+    }
+    .influencer-left{
+        order:2;
+        text-align: center;
+    }
+    .influencer-left h1{
+        order:2;
+        font-size: 32px;
+    }
+    .influencer-left p{
+       margin-bottom: 20px;
+    }
+    .influencer-right{
+        
+    }
+    .influencer-right img{
+        width:100%;
+    }
+    .container{
+      width: 90%;
+     }
+    .collections{
+       grid-template-columns: repeat(1,1fr);
+     }
+    .collection{
+        padding:25px;
+    }
+    .collection img{
+        width: 100%;
+    }
+ 
+  
 }
