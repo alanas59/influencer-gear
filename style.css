@@ -42,8 +42,15 @@
     padding:10px 24px; 
     border-radius: 41px;
  }
+  .button-preebook:hover{
+      transform: scale(1.3);
+      margin-top: 20px;
+  }
  .influencer-right img{
      width:440px;
+ }
+ .influencer-right:hover img{
+     transform: scale(0.8);
  }
 
  /* --------------
@@ -210,7 +217,10 @@ media querey
      }
     .collections{
        grid-template-columns: repeat(1,1fr);
-       margin-top: 50px;
+    
+     }
+    .poular-collection{
+         margin-top: 50px;
      }
     .collection{
         padding:25px;
@@ -221,7 +231,7 @@ media querey
 
     .featured-product{
         grid-template-columns: repeat(1,1fr);
-        margin-top: 50px ;
+        margin-top: 60px ;
     }
     .featured-product-left{
         display: none;
