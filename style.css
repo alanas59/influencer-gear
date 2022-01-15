@@ -15,6 +15,7 @@
 /* ---------------
  influencer styles
  ----------------- */
+ 
  .influencer{
      display: flex;
      column-gap: 50px;;
@@ -69,7 +70,7 @@
      display: grid;
      grid-template-columns: repeat(3,330px);
      grid-column-gap:30px;
-     /* border:1px red solid; */
+     
 }
 .collection{
     background-color: #ffffff;
@@ -78,9 +79,6 @@
     border-radius: 7px;
     margin-bottom: 30px;
 }
-/* .collection img{
-    width: 100%;
-} */
 .collection h1{
     font-size: 28px;
     font-weight: 500;
@@ -99,7 +97,6 @@
 .fa-star.filled{
     color: #FB8200;
 }
-
 .collection p{
     color:#787885;
     font-size: 14px;
@@ -114,9 +111,11 @@
     text-decoration: none;
     margin-right: 17px;
 }
+
 /*-----------------------
  featured product styles 
  ------------------------*/
+
  .featured-product{
      display: grid;
      grid-template-columns: repeat(2,1fr);
@@ -125,10 +124,7 @@
      margin-top:150px;
      
  }
- .featured-product-left {
-     /* text-align: right; */
- }
- .featured-product-left img{
+.featured-product-left img{
     width: 50%;
     margin-left: 150px;
     position: relative;
@@ -187,11 +183,13 @@ footer small{
 /* ---------
 media querey 
 ------------*/
-/* Mobile Responsive */
+
+/* --------------
+Mobile Responsive 
+-----------------*/
 
 @media only screen and (max-width:688px)  {
-
-    .influencer{
+   .influencer{
         flex-direction: column;
         
     }
@@ -246,4 +244,40 @@ media querey
     }
  
   
+}
+
+/* --------------
+Tablet Responsive 
+-----------------*/
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 90%;
+     
+    }
+    .influencer{
+        flex-direction: column;
+        
+    }
+   .influencer-right {
+        text-align: center;
+        margin-top:20px;
+    }
+   .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .collection
+    {
+      padding:25px;
+    }
+    .featured-product{
+       grid-template-columns: repeat(1,1fr);
+    }
+    .featured-product-left{
+      display: none;
+    }
+   
+    .featured-product-right{
+       padding: 30px;
+    }
+   
 }
